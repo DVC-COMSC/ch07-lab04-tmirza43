@@ -4,11 +4,17 @@
 # ******************************
 import random
 
-numbers1 = []
+numbers = []
 numbers2 = []
-result = []
+total = []
+
 for i in range(10):
-	numbers1.append(random.randint(0,100))
-	numbers2.append(random.randint(0,100))
-print (numbers1)
-print (numbers2)
+  numbers.append(random.randint(0,10))
+  numbers2.append(random.randint(0,10))
+
+for j in range(10):
+  total.append(numbers[j] + numbers2[j])
+
+print(numbers)
+print(numbers2)
+print(total)
